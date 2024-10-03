@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애기어때 : 유아전용 중고거래 쇼핑몰</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./order.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="min-w-[380px]">
+      <div class="mt-10 md:px-10">
+        <div class="flex justify-between px-10 lg:px-40">
+          <div>
+            <p
+              class="w-[126px] h-[41px] text-3xl font-bold text-left text-black"
+            >
+              주문결제
+            </p>
+          </div>
+          <div>
+            <p class="w-w-20 h-8 text-xl font-medium text-left hidden md:block">
+              <span class="w-20 h-8 text-xl font-medium text-left text-black"
+                >01 장바구니 > </span
+              ><span
+                class="w-w-20 h-8 text-xl font-medium text-left text-[#ff7675]"
+                >02 주문결제</span
+              ><span class="w-20 h-8 text-xl font-medium text-left text-black">
+                > 03 결제완료</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="max-w-8xl mx-10 lg:mx-40 border border-black mt-6"></div>
+      </div>
+
+      <div class="flex flex-col justify-start items-start mt-10 md:px-10">
+        <div class="px-10 lg:px-40 w-full">
+          <p class="text-2xl text-black">구매자 정보</p>
+          <table class="table-auto mt-4">
+            <tr>
+              <td class="first-column text-black">이름</td>
+              <td>
+                <input
+                  class="user-name border border-gray-200 text-sm"
+                  type="text"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="first-column text-black">이메일</td>
+              <td>
+                <input
+                  class="user-email border border-gray-200 text-sm min-w-[200px]"
+                  type="email"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td class="first-column text-black min-w-[70px]">주소</td>
+              <td
+                class="user-addr flex flex-col md:flex-row space-y-1 md:space-x-5"
+              >
+                <div class="relative">
+                  <input class="input-zip border border-gray-200" type="text" />
+                </div>
+                <p
+                  class="zip-code-button my-2 bg-gray-200 rounded-lg px-2 cursor-pointer w-20"
+                >
+                  우편번호
+                </p>
+                <input
+                  class="input-detail-addr border border-gray-200 min-w-[200px]"
+                  type="text"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <p class="text-2xl text-black mt-20">결제 정보</p>
+          <table class="table-auto mt-4">
+            <tr>
+              <td class="first-column text-black">상품명</td>
+              <td class="cart-products"></td>
+            </tr>
+            <tr>
+              <td class="first-column text-black">총상품가격</td>
+              <td class="cart-total-price"></td>
+            </tr>
+            <tr>
+              <td class="first-column text-black">결제방법</td>
+              <td class="select-pay">
+                <label
+                  ><input
+                    class="px-1"
+                    type="radio"
+                    name="pay"
+                    value="bank"
+                    checked
+                  />
+                  무통장입금</label
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="mt-10 flex justify-center">
+        <button class="payment-button w-20 h-10 bg-[#ff7675] text-white">
+          결제하기
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <footer id="footer"></footer>
+</html>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="module" src="../utils/header.js"></script>
+<script type="module" src="../utils/footer.js"></script>
+<script type="module" src="./order.js"></script>

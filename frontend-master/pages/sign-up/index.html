@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>회원가입 페이지</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- 헤더 지정 -->
+    <div id="header"></div>
+    <!-- 회원가입 -->
+    <div class="mt-20 text-center flex justify-center">
+      <div class="w-[440px]">
+        <div>
+          <p class="text-[50px] mb-14 text-center font-bold text-[#ff8c85]">회원가입</p>
+        </div>
+        <!-- 이름 * -->
+        <p class="w-[62px] h-[21px] font-bold text-left mb-2">
+          <span class="w-[62px] h-[21px] text-sm font-bold text-left text-black"
+          >이름 
+          </span>
+          <span
+            class="w-[62px] h-[21px] text-xs font-bold text-center text-[#f00]"
+          >*
+          </span>
+        </p>
+      <!-- 이름 입력 창 -->
+        <form id="sign-up-form">
+          <div>
+            <input
+              type="name"
+              class="form-control text-base text-left font-bold text-[#767676] w-[440] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="sign-up-name"
+              placeholder="이름"
+            />
+          </div>
+          <!-- 아이디 *-->
+          <p class="w-[62px] h-[21px] font-bold text-left mt-3 mb-3">
+            <span class="w-[62px] h-[21px] text-sm font-bold text-left text-black"
+            >아이디 
+            </span>
+            <span
+              class="w-[62px] h-[21px] text-xs font-bold text-center text-[#f00]"
+            >*
+            </span>
+          </p>
+          <!-- 아이디 입력 창  -->
+          <div class="flex">
+            <input
+              type="id"
+              class="form-control text-base text-left font-bold text-[#767676] w-[348px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="sign-up-id"
+              placeholder="아이디"
+            />
+            <button
+              id="checkId"
+              type="button"
+              class="w-[100px] h-[58px] bg-[#ff7675] text-sm font-bold text-center rounded text-white"
+            >
+              중복확인
+            </button>
+          </div>
+          <!-- 이메일 *-->
+          <p class="w-[62px] h-[21px] font-bold text-left mt-3 mb-3">
+            <span class="w-[62px] h-[21px] text-sm font-bold text-left text-black"
+            >이메일 
+            </span>
+            <span
+              class="w-[62px] h-[21px] text-xs font-bold text-center text-[#f00]"
+            >*
+            </span>
+          </p>
+          <!-- 이메일 입력 창  -->
+          <div>
+            <input
+              type="email"
+              class="form-control text-base text-left font-bold text-[#767676] w-[440px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="sign-up-email"
+              placeholder="이메일 주소"
+            />
+          </div>
+          <!-- 비밀번호 *-->
+          <p class="w-[62px] h-[21px] font-bold text-left mt-3 mb-3">
+            <span class="w-[62px] h-[21px] text-sm font-bold text-left text-black"
+            >비밀번호
+            </span>
+            <span
+              class="w-[62px] h-[21px] text-xs font-bold text-center text-[#f00]"
+            >*
+            </span>
+          </p>
+          <!-- 비밀번호 입력창  -->
+          <div>
+            <input
+              type="password"
+              class="form-control text-base text-left font-bold text-[#767676] w-[440px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="sign-up-password"
+              placeholder="8자 이상, 대소문자, 숫자, 특수문자를 포함해야합니다."
+            />
+          </div>
+          <!-- 비밀번호 확인 *-->
+          <p class="w-[90px] h-[21px] font-bold text-left mt-3 mb-3">
+            <span class="w-[62px] h-[21px] text-sm font-bold text-left text-black"
+            >비밀번호 확인
+            </span>
+            <span
+              class="w-[62px] h-[21px] text-xs font-bold text-center text-[#f00]"
+            >*
+            </span>
+          </p>
+          <!-- 비밀번호 확인 입력창  -->
+          <div>
+            <input
+              type="password"
+              class="form-control text-base text-left font-bold text-[#767676] w-[440px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="sign-up-password-check"
+              placeholder="비밀번호 확인"
+            />
+          </div>
+          <!-- 광고 수신 동의 -->
+          <div class="justify-self-start mt-7 mb-10 text-left">
+            <label class="text-sm text-left font-bold text-[#808080]" for="agree">
+              <input
+                style="zoom: 1.35; vertical-align: middle"
+                type="checkbox"
+                name="marketing"
+                value="marketing-check"
+                checked
+              />
+                마케팅 활용 동의 및 광고 수신 동의
+            </label>
+          </div>
+          <button
+            class="sign-up-Button w-[440px] h-[61px] mt-2 rounded-2xl bg-[#ff7675] text-sm font-bold text-center text-white"
+            type="submit"
+          >
+            동의하고 가입하기
+          </button>
+        </form>
+        
+        <!-- 가입 버튼 id 체크 필요 -> 코드 컨벤션 문제 -->
+
+      <!-- 개인정보제공 동의 텍스트 (임시 삭제 예정 [링크 필요])-->
+      <p
+        class="text-[20px] mb-14 text-center"
+      >
+        <span class="w-[329px] h-[65px] text-sm text-center text-black"
+          >본인은 만 14세 이상이며, 애기어때 </span
+        ><span class="w-[329px] h-[65px] text-sm text-center text-[#0070c0]"
+          >이용약관</span
+        ><span class="w-[329px] h-[65px] text-sm text-center text-black">,</span
+        ><span class="w-[329px] h-[65px] text-sm text-center text-[#0070c0]">
+          개인정보 수집 및 이용 </span
+        ><span class="w-[329px] h-[65px] text-sm text-center text-black"
+          >내용을 확인 하였으며, 동의합니다.</span
+        >
+      </p>
+  </body>
+
+</html>
+<script type="module" src="../utils/header.js"></script>
+<script type="module" src="../utils/api"></script>
+<script type="module" src="../utils/commonRegex.js"></script>
+<script type="module" src="./sign-up.js"></script>

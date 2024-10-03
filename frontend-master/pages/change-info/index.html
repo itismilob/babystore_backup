@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애기어때 : 회원정보변경</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="px-40 lg:px-30 mt-20 min-w-[1200px]">
+      <div class="flex justify-center">
+        <div class="side-menu basis-1/4 px-10 py-10">
+          <div class="mb-5 text-xl">마이페이지</div>
+          <a href="/order-list/" class="block mb-2 px-1">주문조회/현황</a>
+          <a href="/profile-verification/" class="px-1 text-[#FF8C85] font-bold"
+            >회원정보 변경</a
+          >
+        </div>
+        <div class="list-box basis-3/4">
+          <div class="text-center text-xl mt-10">회원정보 변경/탈퇴</div>
+          <div class="max-w-8xl border border-gray-400 mt-6"></div>
+          <div
+            class="flex flex-col justify-center items-center space-y-4 mt-12"
+          >
+            <div
+              class="member-name bg-gray-200 w-[550px] h-[50px] text-lg px-2 py-2"
+            >
+              회원 이름
+            </div>
+            <div
+              class="member-id bg-gray-200 w-[550px] h-[50px] text-lg px-2 py-2"
+            >
+              회원 아이디
+            </div>
+            <input
+              class="input-pass border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+              type="password"
+              placeholder="8자 이상, 대소문자, 숫자, 특수문자를 포함해야 합니다."
+            />
+            <input
+              class="input-pass-check border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+              type="password"
+              placeholder="비밀번호 확인"
+            />
+            <input
+              class="input-email border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+              type="email"
+              placeholder="이메일"
+            />
+            <div class="relative">
+              <input
+                class="input-zip border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+                type="text"
+                placeholder="우편번호"
+              />
+              <p
+                class="zip-button block absolute ml-[26rem] -mt-9 bg-gray-200 rounded-lg px-2 cursor-pointer"
+              >
+                우편번호 찾기
+              </p>
+            </div>
+            <input
+              class="input-detail-addr border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+              type="text"
+              placeholder="상세주소"
+            />
+            <p
+              class="modify-button rounded-lg px-4 py-1 bg-[#FF8C85] text-white text-xl cursor-pointer"
+            >
+              수정
+            </p>
+            <div class="">
+              <p class="withdraw-button">회원탈퇴</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="module" src="../utils/header.js"></script>
+<script type="module" src="./change-info.js"></script>

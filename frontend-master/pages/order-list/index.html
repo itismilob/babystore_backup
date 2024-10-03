@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>애기어때 : 유아전용 중고거래 쇼핑몰</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="px-30 lg:px-40 mt-20 min-w-[1400px]">
+      <div class="flex justify-center">
+        <div class="side-menu basis-1/4 px-10 py-10">
+          <div class="mb-5 text-xl">마이페이지</div>
+          <a href="#" class="block mb-2 px-1 text-[#FF8C85] font-bold"
+            >주문조회/현황</a
+          >
+          <a href="/profile-verification/" class="px-1">회원정보 변경</a>
+        </div>
+        <div class="list-box basis-3/4">
+          <div class="text-center text-xl mt-10">주문조회/현황</div>
+          <div class="max-w-8xl border border-gray-400 mt-6"></div>
+          <p class="text-xl my-5 font-bold">주문내역</p>
+
+          <div
+            class="list-header h-[53px] bg-[#fbfbfb] shadow-md grid grid-cols-6 px-4 py-2"
+          >
+            <p>주문일자(주문번호)</p>
+            <p class="col-span-2">상품</p>
+            <p>주문금액</p>
+            <p class="col-span-2 ml-4">주문상태</p>
+          </div>
+          <div class="card-box mb-20"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer id="footer"></footer>
+</html>
+
+<script type="module" src="../utils/header.js"></script>
+<script type="module" src="../utils/footer.js"></script>
+<script type="module" src="./order-list.js"></script>

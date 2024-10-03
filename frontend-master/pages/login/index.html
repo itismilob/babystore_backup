@@ -1,0 +1,75 @@
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>로그인 페이지</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="mt-20 text-center flex justify-center">
+      <div class="w-[448px]">
+        <div>
+          <p class="text-[50px] text-center text-[#ff8c85] mb-4">로그인</p>
+        </div>
+        <form>
+          <div>
+            <input
+              type="email"
+              class="form-control text-base text-left text-[#767676] w-[448px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="emailInput"
+              placeholder="아이디를 입력해주세요."
+            />
+          </div>
+          <div class="mt-2">
+            <input
+              type="password"
+              class="form-control text-base text-left text-[#767676] w-[448px] h-[58px] gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+              id="passwordInput"
+              placeholder="비밀번호를 입력해주세요."
+            />
+          </div>
+          <div class="justify-self-start mt-2 text-left">
+            <input type="checkbox" name="agree" id="agree" />
+            <label class="text-sm text-left text-[#808080]" for="agree"
+              >자동 로그인</label
+            >
+          </div>
+          <button
+            type="button"
+            class="login-button w-[446px] h-[61px] mt-2 rounded-2xl bg-[#ff7675] text-sm font-bold text-center text-white"
+          >
+            로그인
+          </button>
+        </form>
+        <div>
+          <button
+            class="signup-button w-[446px] h-[61px] rounded-2xl bg-white border border-[#ff8c85] text-sm font-bold text-center text-[#ff7675]"
+          >
+            회원가입
+          </button>
+        </div>
+        <div class="mt-2">
+          <p class="w-full h-[31px] text-sm font-bold text-[#646]">
+            <a href="/find-id/">아이디 찾기</a> |
+            <a href="/pw-verification/">비밀번호 찾기</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer id="footer"></footer>
+</html>
+<script src="../utils/header.js" type="module"></script>
+<script src="../utils/footer.js" type="module"></script>
+<script src="./login.js" type="module"></script>

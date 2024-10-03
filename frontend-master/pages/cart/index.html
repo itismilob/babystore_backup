@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../index.css" />
+  <link
+  href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+<script
+  src="https://kit.fontawesome.com/49219009a3.js"
+  crossorigin="anonymous"
+></script>
+  <title>장바구니 페이지</title>
+</head>
+
+<body>
+  <!-- 헤더 지정 -->
+  <div id="header"></div>
+      <div class="mt-10 mx-auto min-w-[1400px]">
+      <div class="flex justify-between px-10 lg:px-40">
+        <div>
+          <p class="w-[126px] h-[41px] text-3xl font-bold text-left text-black">
+            장바구니
+          </p>
+        </div>
+        <div>
+          <p class="w-w-20 h-8 text-xl font-medium text-left hidden md:block">
+            <span class="w-20 h-8 text-xl font-medium text-left  text-[#ff7675]"
+              >01 장바구니 > </span
+            ><span class="w-w-20 h-8 text-xl font-medium text-left text-black"
+              >02 주문결제</span
+            ><span
+              class="w-20 h-8 text-xl font-medium text-left text-black"
+            >
+              > 03 결제완료</span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="max-w-8xl mx-10 lg:mx-40 border border-black mt-6"></div>
+    </div>
+  <!-- section1 장바구니, 주문 진행 바 -->
+  <div class=" container mx-auto px-16 py-8 min-w-[1400px]">
+
+    <!-- 엘리스 배송 -->
+    <div id="card-box" class="mx-20">
+      <div class="w-440">
+        <h3 class="my-8 text-1xl font-bold border-b border-gray-200 p-1 mb-0">엘리스 배송</h3>
+      </div>
+      <!-- 메인 -->
+      <form>
+        <div>
+          <div id="cart"/>
+        </div>
+        <div>
+          <div id="cart-total" />
+        </div>
+      </form>
+    </div>
+    <div id="total" />
+</body>
+
+</html>
+<script src="../utils/header.js" type="module"></script>
+<script src="cart.js" type="module"></script>

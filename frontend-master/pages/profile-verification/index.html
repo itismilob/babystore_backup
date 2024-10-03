@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../index.css" />
+  <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/49219009a3.js" crossorigin="anonymous"></script>
+  <title>본인 인증</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <div id="header"></div>
+
+  <div class="flex justify-center mt-20">
+    <div class="w-[448px]">
+      <div>
+        <p class="text-[50px] font-semibold text-center text-[#ff8c85] my-16">
+          본인 인증</p>
+      </div>
+
+      <!-- 아이디 -->
+      <div class="flex mb-3">
+        <p class="h-[21px] font-bold text-left">
+          <span class="text-sm text-[#000]">
+            아이디 </span>
+          <span class="text-xs text-[#f00]">
+            * </span>
+        </p>
+      </div>
+
+      <!-- 아이디 입력 -->
+      <div class="flex justify-center self-stretch flex-grow-0 flex-shrink-0 h-6">
+        <input type="text"
+          class="form-control text-base font-bold text-left text-[#a8a8a8] w-[448px] h-[58px]  gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+          id="idInput" placeholder="아이디" />
+      </div>
+
+
+      <!-- 비밀번호 -->
+      <div class="flex mt-9 mb-3">
+        <p class="h-[21px] flex font-bold text-left">
+          <span class="text-sm text-[#000]">
+            비밀번호
+          </span>
+          <span class="text-xs text-[#f00]">
+            *
+          </span>
+        </p>
+      </div>
+
+      <!-- 비밀번호 입력 -->
+      <div class="flexbox flex justify-center self-stretch flex-grow-0 flex-shrink-0 h-6 mb-3">
+        <input type="password"
+          class="form-control text-base font-bold text-left text-[#a8a8a8] w-[448px] h-[58px]  gap-2.5 p-[11px] rounded border border-[#ebebeb]"
+          id="passwordInput" placeholder="비밀번호">
+      </div>
+
+      <!-- 변경 버튼 -->
+      <div class="flexbox flex justify-center">
+        <button
+          class="verificationButton w-[446px] h-[61px] mt-14 rounded-2xl bg-[#ff8c85] text-sm font-bold text-center text-white">
+          본인 인증
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+<footer id="footer"></footer>
+</html>
+
+<script src="../utils/header.js" type="module"></script>
+<script src="../utils/footer.js" type="module"></script>
+<script src="./profile-verification.js" type="module"></script>

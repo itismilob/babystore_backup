@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 변경, 수정 페이지</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/49219009a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="px-40 lg:px-30 mt-20">
+      <div class="flex justify-center">
+        <div class="side-menu basis-1/4 px-10 py-10">
+          <div class="mb-5 text-xl">마이페이지</div>
+          <a href="/order-list/" class="block mb-2 px-1 text-[#FF8C85] font-bold"
+            >주문조회/현황</a
+          >
+          <a href="/change-info/" class="px-1">회원정보 변경</a>
+        </div>
+        <div class="list-box basis-3/4">
+          <div class="text-center text-xl mt-10">주문조회/현황</div>
+          <div class="max-w-8xl border border-gray-400 mt-6"></div>
+          <h1 class="text-xl my-5 font-bold">주문내역</h1>
+
+          <div
+            class="list-header h-[53px] bg-[#fbfbfb] shadow-md grid grid-cols-4 px-4 py-2"
+          ></div>
+          <div class="list-main mt-5 h-[150px] shadow-md grid grid-cols-9 px-4">
+            <div class="flex items-center justify-center border-r border-gray-200 col-span-2">2020.20.20</div>
+            <div class="flex items-center justify-center border-r border-gray-200 col-span-4">
+                <div class="order-name ml-2 justify-center">원숭이 인형</div>
+            </div>
+            <div class="order-price flex items-center border-r border-gray-200 justify-center col-span-2">1,000원</div>
+            <div class="flex items-center justify-center col-span-1">결제</div>
+        </div>
+        
+
+          <!-- 우편 번호 검색 -->
+          <div class="flex flex-col justify-center items-center space-y-4 mt-16">
+            <div class="relative">
+              <input
+                class="input-zip border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+                type="text"
+                placeholder="우편번호"
+                id="agiotte_postcode"
+              />
+              <p
+                class="zip-code-button block absolute ml-[26rem] -mt-9 bg-gray-200 rounded-lg px-2 cursor-pointer"
+              >
+                우편번호 찾기
+              </p>
+            </div>
+            <input
+              class="input-detail-addr border border-gray-300 w-[550px] h-[50px] rounded-sm px-2"
+              type="text"
+              id="agiotte_address"
+              placeholder="주소"
+            />
+
+            <div class="flex justify-center">
+              <p
+              class="change-order-button rounded-lg mx-10 my-10 px-4 py-1 bg-[#FF8C85] text-white text-xl cursor-pointer"
+            >
+              주문 변경
+            </p>
+            <p
+              class="cancel-order-button rounded-lg mx-10 my-10 px-4 py-1 bg-[gray] text-white text-xl cursor-pointer"
+            >
+              주문 취소
+            </p>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer id="footer"></footer>
+
+</html>
+<!-- 우편번호 스크립트 -->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script type="module" src="../utils/header.js"></script>
+<script type="module" src="change-order.js"></script>
+<script type="module" src="../utils/footer.js"></script>
+
